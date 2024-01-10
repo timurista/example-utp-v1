@@ -1,1 +1,1 @@
-[]
+[{"question": "In the context of Linear Regression, what does the term 'dependent variable' refer to?", "choices": ["The variable that the model is trying to predict or estimate.", "The variable that is used to predict or estimate the dependent variable.", "A variable that is not related to the independent variable.", "A variable that is not used in the regression equation.", "The variable that is used to train the model."], "correct": "The variable that the model is trying to predict or estimate."}]

@@ -23,7 +23,19 @@ def start_session():
     console.print("Starting Learning Session...", style="bold green")
     pt.start_session()
     q = pt.get_current_question()
-    print(q.question)
+    console.print("Question: "+ q.question, style="bold blue")
+    for (index, choice) in enumerate(q.choices):
+        letter = chr(ord('A') + index)
+        console.print(letter + ") " + choice, style="bold blue")
+    # prompt user for answer
+    answer = input("Enter your answer: ")
+    # check answer index
+    answer_index = ord(answer.upper()) - ord('A')
+    if q.choices[answer_index] == q.correct:
+        console.print("Correct!", style="bold green")
+    else:
+        console.print("Incorrect!", style="bold red")
+
 
 def review_progress():
     # Implementation of progress review
